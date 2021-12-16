@@ -2,9 +2,7 @@ import React from 'react';
 import './App.css';
 import HornedBeast from './HornedBeast';
 import beastData from './data.json';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CardGroup from 'react-bootstrap/CardGroup';
 // import CardColumns from 'react-bootstrap/CardColumns';
 
 class Main extends React.Component{
