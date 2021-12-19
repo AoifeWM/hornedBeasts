@@ -15,6 +15,7 @@ class HornedBeast extends React.Component{
     this.setState({
       status: newStatus
     });
+    this.props.showBeast(this.props.beastNumber);
   }
   render(){
     return(
