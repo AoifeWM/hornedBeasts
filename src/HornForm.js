@@ -8,7 +8,7 @@ class HornForm extends React.Component{
       <>
         <Form>
             <Form.Label>Filter by horn number</Form.Label>
-            <Form.Select onChange={this.props.handler} aria-label="Default select example">
+            <Form.Select onChange={this.props.handleChange} aria-label="horn filter">
                 <option value={0}>All Beasts</option>
                 <option value={1}>One Horn</option>
                 <option value={2}>Two Horns</option>

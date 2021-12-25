@@ -19,10 +19,6 @@ class App extends React.Component{
   }
   handleChange = event => {
     this.setState({hornNumber: event.target.value});
-    this.setState({hornNumber: event.target.value});
-    this.setState({hornNumber: event.target.value});
-    this.setState({hornNumber: event.target.value});
-    this.setState({hornNumber: event.target.value});
   }
   showBeast = beastNumber => {
     this.setState({show: true});
@@ -35,7 +31,7 @@ class App extends React.Component{
     return(
       <div className="App">
         <Header />
-        <HornForm handler={this.handleChange} />
+        <HornForm handleChange={this.handleChange} />
         <Main beastData={beastData} showBeast={this.showBeast} hornNumber={this.state.hornNumber}/>
         <Footer />
         <SelectedBeast show={this.state.show} onHide={this.onHide} beast={beastData[this.state.beastNumber]}/>
